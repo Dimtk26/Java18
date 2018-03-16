@@ -14,10 +14,7 @@ public class Matrix implements IMatrix {
         matrix = new double[N*N];
         for (int i = 0; i<N*N ; i++) {
             matrix[i] = 0;
-
         }
-
-
     }
 
 
@@ -86,7 +83,9 @@ public class Matrix implements IMatrix {
         return 0;
     }
 
+/*Определитель для рандомной матрицы N*N*/
     public static void main(String[] args) {
+
         int N = 4;
         Matrix m = new Matrix(N);
         for (int i = 0; i < N; i++) {
@@ -105,11 +104,55 @@ public class Matrix implements IMatrix {
 
         System.out.println("d = " + m.calculateDeterminant());
 
+        System.out.println("=============================");
         for(int i=0;i<N;i++){
             for(int j=0;j<N;j++){
-                System.out.print(m.getElem(i,j) + "  ");
+                System.out.printf((double)m.getElem(i,j) + "  ");
             }
             System.out.println();
         }
     }
+
+
+
+    public String toStr() {
+        StringBuffer sBuff = new StringBuffer();
+        int counter = 0;
+        String newLine=(" \n");
+        for(int i = 0; i < N*N; i++){
+                sBuff.append(matrix[i]);
+                sBuff.append(" ");
+                counter++;
+                if(counter == N) {
+                    counter = 0;
+                    sBuff.append('\n');
+                   sBuff.append(newLine);
+                }
+            }
+        return sBuff.toString();
+    }
+
+  /*  public String toStrFromBuf(StringBuffer strBuf){
+
+    }*/
+
+///
+    /* v22
+    public static int toString(Matrix m) {
+        return Matrix.toString(m);
+    }*/
+
+    /*    Main для вывода матрицы в файл
+    public static void main(String[] args){
+        StringBuffer first = new StringBuffer();
+        StringBuffer second = new StringBuffer();
+        StringBuffer third = new StringBuffer();
+
+        first.append((double) 2.5); first.append((double) 7.5); first.append('\n');
+        second.append(7);
+        third.append("Correct");
+
+        System.out.println(first.toString() + "; " + second.toString() + "; " + third.toString());
+    }
+    */
 }
