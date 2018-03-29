@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="PolynomTest" duration-ms="162" started-at="2018-02-21T05:37:40Z" finished-at="2018-02-21T05:37:40Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="162" started-at="2018-02-21T05:37:40Z" finished-at="2018-02-21T05:37:40Z">
+      <class name="PolynomTest">
+        <test-method status="PASS" signature="testEquals()[pri:0, instance:PolynomTest@49e4cb85]" name="testEquals" duration-ms="36" started-at="2018-02-21T05:37:40Z" finished-at="2018-02-21T05:37:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEquals -->
+        <test-method status="PASS" signature="testGetCoef()[pri:0, instance:PolynomTest@49e4cb85]" name="testGetCoef" duration-ms="0" started-at="2018-02-21T05:37:40Z" finished-at="2018-02-21T05:37:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCoef -->
+        <test-method status="PASS" signature="testSolve([D, [D)[pri:0, instance:PolynomTest@49e4cb85]" name="testSolve" duration-ms="0" started-at="2018-02-21T05:37:40Z" data-provider="coeff" finished-at="2018-02-21T05:37:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@548a9f61]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[D@1753acfe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSolve -->
+        <test-method status="PASS" signature="testSolve([D, [D)[pri:0, instance:PolynomTest@49e4cb85]" name="testSolve" duration-ms="0" started-at="2018-02-21T05:37:40Z" data-provider="coeff" finished-at="2018-02-21T05:37:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@7c16905e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[D@2a2d45ba]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSolve -->
+        <test-method status="PASS" signature="testSolve([D, [D)[pri:0, instance:PolynomTest@49e4cb85]" name="testSolve" duration-ms="0" started-at="2018-02-21T05:37:40Z" data-provider="coeff" finished-at="2018-02-21T05:37:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@68be2bc2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[D@28feb3fa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSolve -->
+        <test-method status="PASS" signature="testSolve([D, [D)[pri:0, instance:PolynomTest@49e4cb85]" name="testSolve" duration-ms="0" started-at="2018-02-21T05:37:40Z" data-provider="coeff" finished-at="2018-02-21T05:37:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@675d3402]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[D@51565ec2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSolve -->
+        <test-method status="PASS" signature="testSolve([D, [D)[pri:0, instance:PolynomTest@49e4cb85]" name="testSolve" duration-ms="0" started-at="2018-02-21T05:37:40Z" data-provider="coeff" finished-at="2018-02-21T05:37:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@482f8f11]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[D@1593948d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSolve -->
+        <test-method status="PASS" signature="testSolve([D, [D)[pri:0, instance:PolynomTest@49e4cb85]" name="testSolve" duration-ms="0" started-at="2018-02-21T05:37:40Z" data-provider="coeff" finished-at="2018-02-21T05:37:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@2a5ca609]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[D@20e2cbe0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSolve -->
+      </class> <!-- PolynomTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- PolynomTest -->
+</testng-results>
