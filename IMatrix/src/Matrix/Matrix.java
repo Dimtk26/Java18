@@ -1,14 +1,12 @@
 package Matrix;
 
 import IMatrix.*;
-
 import java.util.Arrays;
 import java.util.Objects;
 
 public class Matrix implements IMatrix {
     private double [] matrix;
     private int N ;
-
     public Matrix(int size){
         N = size;
         matrix = new double[N*N];
@@ -16,8 +14,6 @@ public class Matrix implements IMatrix {
             matrix[i] = 0;
         }
     }
-
-
 
     @Override
     public boolean equals(Object o) {
@@ -83,7 +79,7 @@ public class Matrix implements IMatrix {
         return 0;
     }
 
-/*Определитель для рандомной матрицы N*N*/
+/* Определитель для рандомной матрицы N*N */
     public static void main(String[] args) {
 
         int N = 4;
@@ -107,52 +103,32 @@ public class Matrix implements IMatrix {
         System.out.println("=============================");
         for(int i=0;i<N;i++){
             for(int j=0;j<N;j++){
-                System.out.printf((double)m.getElem(i,j) + "  ");
+                double temp=0;                         //delete
+                temp = m.getElem(i,j);               //delete
+                System.out.printf("%.2f   ",temp );//System.out.printf(m.getElem(i,j) + "  ");
             }
             System.out.println();
         }
     }
 
 
-
     public String toStr() {
         StringBuffer sBuff = new StringBuffer();
         int counter = 0;
         String newLine=(" \n");
+        sBuff.append(" ");
         for(int i = 0; i < N*N; i++){
                 sBuff.append(matrix[i]);
                 sBuff.append(" ");
                 counter++;
                 if(counter == N) {
                     counter = 0;
+                    sBuff.append('\r');
                     sBuff.append('\n');
-                   sBuff.append(newLine);
+                    sBuff.append(newLine);
                 }
             }
         return sBuff.toString();
     }
 
-  /*  public String toStrFromBuf(StringBuffer strBuf){
-
-    }*/
-
-///
-    /* v22
-    public static int toString(Matrix m) {
-        return Matrix.toString(m);
-    }*/
-
-    /*    Main для вывода матрицы в файл
-    public static void main(String[] args){
-        StringBuffer first = new StringBuffer();
-        StringBuffer second = new StringBuffer();
-        StringBuffer third = new StringBuffer();
-
-        first.append((double) 2.5); first.append((double) 7.5); first.append('\n');
-        second.append(7);
-        third.append("Correct");
-
-        System.out.println(first.toString() + "; " + second.toString() + "; " + third.toString());
-    }
-    */
 }
